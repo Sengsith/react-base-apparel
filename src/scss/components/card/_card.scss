@@ -1,0 +1,27 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .CardInner {
+    margin-inline: 1.3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .Card {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 15rem;
+    text-align: start;
+  }
+
+  .CardInner {
+    width: clamp(20rem, 30rem, 50rem);
+  }
+
+  .CardImage {
+  }
+}

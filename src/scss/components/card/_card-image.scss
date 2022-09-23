@@ -1,0 +1,12 @@
+.CardImage {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .CardImage {
+    content: url("../../../images/hero-desktop.jpg");
+    height: 100vh;
+    margin-bottom: 0;
+    right: 0;
+  }
+}

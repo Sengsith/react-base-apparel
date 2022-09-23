@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // outline: 1px solid limegreen !important;
+}
+
+body {
+  font-size: $fs-body;
+  font-family: $ff-body;
+  font-weight: $fw-regular;
+  color: $clr-primary-400;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  margin: 2rem;
+
+  img {
+    width: 35%;
+  }
+}
+
+@media (min-width: 800px) {
+  .App {    
+    background: url('../../images/bg-pattern-desktop.svg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  header {
+    display: none;
+  }
+}

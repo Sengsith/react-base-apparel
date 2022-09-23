@@ -1,0 +1,52 @@
+@use '../../abstracts' as *;
+
+.CardForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+// Email input
+.CardFormInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  position: relative;
+
+  input {
+    border-radius: 100vmax;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    height: 3rem;
+    width: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: 1px solid $clr-primary-400;
+    border: none;
+    color: inherit;
+  }
+
+  button {
+    border-radius: 100vmax;
+    background: $clr-gradient-accent;
+    width: 4rem;
+    height: 3rem;
+    border: none;
+    margin-left: -4rem;
+    box-shadow: 5px 17px 15px -15px $clr-primary-500;
+  }
+}
+
+.Error {
+  color: $clr-primary-500;
+  visibility: hidden;
+
+  &#error-icon {
+    position: absolute;
+    right: 4.5rem;
+  }
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/style.scss';
+import LOGO from './images/logo.svg';
+import CARD_IMG from './images/hero-mobile.jpg';
 
-function App() {
+import Header from './components/Header';
+import Card from './components/card/Card';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header logo={LOGO} alt="circle brand"/>
+      <Card image={CARD_IMG} image_alt="woman posing for apparel" header={"WE'RE COMING SOON"} content="Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with anouncements and our launch deals."/>
     </div>
   );
 }
