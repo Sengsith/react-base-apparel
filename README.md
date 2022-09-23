@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Sengsith/react-base-apparel)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://chipper-tarsier-fd248d.netlify.app)
 
 ## My process
 
